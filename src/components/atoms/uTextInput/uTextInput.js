@@ -13,7 +13,7 @@ const UTextInput =()=>{
             placeholder="Tel no"
             placeholderTextColor={"#f9f8fd"}
             onChangeText={(e)=>{dispatch(setPhoneNumber(e))}} 
-            maxLength={13}
+            maxLength={11}
             value={phoneNumber}
             />
         </View>

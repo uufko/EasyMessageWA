@@ -5,6 +5,7 @@ export const Style = StyleSheet.create({
     viewStyle:{
         backgroundColor:"white",
         height:UserDevice.deviceHeight*.001,
-        width:UserDevice.deviceWidht*.8
+        width:UserDevice.deviceWidht*.8,
+        opacity:.5
     }
 })
