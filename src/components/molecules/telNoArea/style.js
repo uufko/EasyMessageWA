@@ -1,14 +1,15 @@
 import { StyleSheet } from "react-native";
 import { UserDevice } from "../../metarials/userDevice";
+import { Colors } from "../../metarials/colors";
 
 export const Style = StyleSheet.create({
     viewStyle:{
-        justifyContent:"center",
+        justifyContent:"space-around",
         alignItems:"center",
         flexDirection:"row",
-        backgroundColor:"#171719",
+        backgroundColor:Colors.listColor,
         borderRadius:20,
         height:UserDevice.deviceHeight*.1,
-        width:UserDevice.deviceWidht*.95
+        width:UserDevice.deviceWidht*.95,
     }
 })

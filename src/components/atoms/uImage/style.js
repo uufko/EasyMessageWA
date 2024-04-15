@@ -1,5 +1,6 @@
 import { StyleSheet } from "react-native";
 import { UserDevice } from "../../metarials/userDevice";
+import { Colors } from "../../metarials/colors";
 
 export const Style = StyleSheet.create({
     imageStyle:{
@@ -10,9 +11,9 @@ export const Style = StyleSheet.create({
     touchableStyle:{
         justifyContent:"center",
         alignItems:"center",
-        backgroundColor:"#2ec26a",
-        height:UserDevice.deviceHeight*.07,
-        width:UserDevice.deviceHeight*.07,
-        borderRadius:UserDevice.deviceHeight*.07/2,
+        backgroundColor:Colors.imageColor,
+        height:UserDevice.deviceHeight*.06,
+        width:UserDevice.deviceHeight*.06,
+        borderRadius:UserDevice.deviceHeight*.06/2,
     }
 })

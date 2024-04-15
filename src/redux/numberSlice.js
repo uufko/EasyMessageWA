@@ -5,22 +5,39 @@ const NumberSlice = createSlice({
     initialState: {
         phoneNumber: "",
         phoneList: [],
+        localNumber: "",
+        theme: true
     },
     reducers: {
         setPhoneNumber(state, data) {
             state.phoneNumber = data.payload
         },
+        refresh(state, data) {
+            state.phoneNumber = ""
+        },
+        setLocalNumber(state, data) {
+            if (data.payload[0] == "+") {
+                state.localNumber = data.payload
+            } else {
+                state.localNumber = `+${data.payload}`
+            }
+        },
         addPhoneList(state, data) {
-            if (data.payload._phone.length == 10) {
-                data.payload._phone = `0${data.payload._phone}`
-                state.phoneList.push(data.payload)
-            } else if (data.payload._phone.length == 11) {
-                state.phoneList.push(data.payload)
-                }
-            
+            state.phoneList.unshift(data.payload)
+        },
+        storagePhoneList(state, data) {
+            data.payload == null ? null : state.phoneList = data.payload
+        },
+        storageLocalCode(state, data) {
+            if (data.payload == null) {
+                state.localNumber = "+90"
+            } else { state.localNumber = data.payload }
+        },
+        deletePhoneList(state, data) {
+            state.phoneList.splice(data.payload, 1)
         }
     }
 })
 
-export const { setPhoneNumber, addPhoneList } = NumberSlice.actions
+export const { setPhoneNumber, addPhoneList, setLocalNumber, refresh, storagePhoneList, storageLocalCode, deletePhoneList } = NumberSlice.actions
 export default NumberSlice

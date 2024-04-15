@@ -4,9 +4,11 @@ import { Colors } from "../../metarials/colors";
 
 export const Style = StyleSheet.create({
     viewStyle:{
+        paddingLeft:10,
+        justifyContent:"space-around",
+        alignItems:"center",
+        width:UserDevice.deviceWidht*.95,
+        height:UserDevice.deviceHeight*.08, 
         flexDirection:"row",
-        //backgroundColor:Colors.listColor,
-        borderRadius:20,
-        width:UserDevice.deviceWidht*.95, flex:1
-    }
+    },
 })

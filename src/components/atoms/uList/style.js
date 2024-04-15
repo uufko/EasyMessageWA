@@ -1,44 +1,50 @@
 import { StyleSheet } from "react-native";
 import { UserDevice } from "../../metarials/userDevice";
+import { Colors } from "../../metarials/colors";
 
 export const Style = StyleSheet.create({
-    viewStyle:{
-        margin:1,
-        height:UserDevice.deviceHeight*.1,
-        width:UserDevice.deviceWidht*.9,
-        flexDirection:"row"
+    viewStyle: {
+        margin: 1,
+        paddingLeft: 5,
+        height: UserDevice.deviceHeight * .1,
+        width: UserDevice.deviceWidht * .95,
+        flexDirection: "row",
+        backgroundColor: Colors.listColor,
+        borderRadius: 20
     },
-    textStyle:{
-        height:UserDevice.deviceHeight*.1,
-        width:UserDevice.deviceWidht*.9,
-        fontSize:20,
-        fontFamily:"bont",
-        padding:20,
-        color:"#f9f8fd",
-        textAlign:"left",textAlignVertical:"center"
+    textStyle: {
+        fontSize: UserDevice.deviceWidht * .05,
+        fontFamily: "bont",
+        color: Colors.textColor,
+        textAlign: "left",
+        textAlignVertical: "center",
     },
-    dateTextStyle:{
-        fontSize:12,
-        fontFamily:"bont",
-        padding:20,
-        color:"#f9f8fd",
-        textAlign:"left",textAlignVertical:"center",
-        opacity:.7
+    dateTextStyle: {
+        fontSize: UserDevice.deviceWidht * .03,
+        fontFamily: "bont",
+        color: Colors.textColor,
+        textAlign: "left",
+        textAlignVertical: "center",
+        opacity: .7
     },
-    imageView:{
+    imageView: {
         //backgroundColor:"bisque",
-        flex:1, justifyContent:"center", alignItems:"center"
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
     },
-    numberView:{
-        //backgroundColor:"green",
-        flex:5
+    numberView: {
+        justifyContent: "center",
+        flex: 4
     },
-    dateView:{
+    dateView: {
         //backgroundColor:"aqua",
-        flex:4,justifyContent:"space-around",alignItems:"center"
+        flex: 2,
+        justifyContent: "space-around",
+        alignItems: "center"
     },
-    imageStyle:{
-        height:UserDevice.deviceHeight*.03,
-        width:UserDevice.deviceHeight*.03,
+    imageStyle: {
+        height: UserDevice.deviceHeight * .03,
+        width: UserDevice.deviceHeight * .03,
     }
 })

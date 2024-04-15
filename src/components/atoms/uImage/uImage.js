@@ -1,11 +1,10 @@
 import { View,Text, TouchableOpacity, Image } from "react-native"
-import { Images } from "../../../assets/images/images"
 import { Style } from "./style"
 
-export const UImage =({onPress})=>{
+export const UImage =({onPress,source,backgroundColor})=>{
     return(
-        <TouchableOpacity onPress={onPress} style={Style.touchableStyle}>
-            <Image style={Style.imageStyle} source={Images.sendIcon}/>
+        <TouchableOpacity onPress={onPress} style={[Style.touchableStyle,{backgroundColor:backgroundColor}]}>
+            <Image style={Style.imageStyle} source={source}/>
         </TouchableOpacity>
     )
 }
