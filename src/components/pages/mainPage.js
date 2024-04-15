@@ -4,6 +4,7 @@ import { Style } from "./style"
 import { UFlatList } from "../molecules/uFlatList/uFlatList"
 import { USpace } from "../atoms/uSpace/uSpace"
 import { UHeader } from "../molecules/uHeader/uHeader"
+import { BannerAds } from "../../ads/bannerAds/bannerAds"
 
 export const MainPage = () => {
     return (
@@ -11,7 +12,7 @@ export const MainPage = () => {
             <UHeader />
             <TelNoArea />
             <UFlatList />
-            <USpace/>
+            <BannerAds/>
         </SafeAreaView>
     )
 }

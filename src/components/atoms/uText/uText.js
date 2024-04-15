@@ -4,7 +4,7 @@ import { Style } from "./style"
 export const UText =()=>{
     return(
         <View style={Style.viewStyle}>
-            <Text style={Style.textStyle}>Whatsapp Direkt Mesaj</Text>
+            <Text style={Style.textStyle}>WhatsApp Direkt Mesaj</Text>
         </View>
     )
 }
