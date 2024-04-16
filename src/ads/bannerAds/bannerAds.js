@@ -8,7 +8,7 @@ export const BannerAds = () => {
   return (
     <View style={{alignItems:"center"}}>
       <BannerAd
-        size={BannerAdSize.BANNER}
+        size={BannerAdSize.LARGE_BANNER}
         unitId={adUnitId}
       />
     </View>

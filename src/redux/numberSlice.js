@@ -23,10 +23,14 @@ const NumberSlice = createSlice({
             }
         },
         addPhoneList(state, data) {
+            if(state.phoneList.length==10){
+                state.phoneList.pop()
+            }
             state.phoneList.unshift(data.payload)
         },
         storagePhoneList(state, data) {
             data.payload == null ? null : state.phoneList = data.payload
+            
         },
         storageLocalCode(state, data) {
             if (data.payload == null) {

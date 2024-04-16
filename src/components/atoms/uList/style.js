@@ -29,7 +29,7 @@ export const Style = StyleSheet.create({
     },
     imageView: {
         //backgroundColor:"bisque",
-        flex: 1,
+        flex: 1.5,
         justifyContent: "center",
         alignItems: "center",
     },
@@ -44,7 +44,7 @@ export const Style = StyleSheet.create({
         alignItems: "center"
     },
     imageStyle: {
-        height: UserDevice.deviceHeight * .03,
-        width: UserDevice.deviceHeight * .03,
+        height: UserDevice.deviceHeight * .035,
+        width: UserDevice.deviceHeight * .035,
     }
 })
