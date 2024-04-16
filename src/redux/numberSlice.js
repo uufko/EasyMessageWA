@@ -6,7 +6,7 @@ const NumberSlice = createSlice({
         phoneNumber: "",
         phoneList: [],
         localNumber: "",
-        theme: true
+        theme: false
     },
     reducers: {
         setPhoneNumber(state, data) {
@@ -39,9 +39,12 @@ const NumberSlice = createSlice({
         },
         deletePhoneList(state, data) {
             state.phoneList.splice(data.payload, 1)
+        },
+        setTheme(state,data){
+           state.theme = !data.payload
         }
     }
 })
 
-export const { setPhoneNumber, addPhoneList, setLocalNumber, refresh, storagePhoneList, storageLocalCode, deletePhoneList } = NumberSlice.actions
+export const { setPhoneNumber, addPhoneList, setLocalNumber, refresh, storagePhoneList, storageLocalCode, deletePhoneList,setTheme } = NumberSlice.actions
 export default NumberSlice

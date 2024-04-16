@@ -11,5 +11,14 @@ export const Style = StyleSheet.create({
         borderRadius:20,
         height:UserDevice.deviceHeight*.1,
         width:UserDevice.deviceWidht*.95,
+    },
+    lightViewStyle:{
+        justifyContent:"space-around",
+        alignItems:"center",
+        flexDirection:"row",
+        backgroundColor:Colors.lightListColor,
+        borderRadius:20,
+        height:UserDevice.deviceHeight*.1,
+        width:UserDevice.deviceWidht*.95,
     }
 })

@@ -12,10 +12,25 @@ export const Style = StyleSheet.create({
         backgroundColor: Colors.listColor,
         borderRadius: 20
     },
+    lightViewStyle: {
+        margin: 1,
+        paddingLeft: 5,
+        height: UserDevice.deviceHeight * .1,
+        width: UserDevice.deviceWidht * .95,
+        flexDirection: "row",
+        backgroundColor: Colors.lightListColor,
+        borderRadius: 20
+    },
     textStyle: {
         fontSize: UserDevice.deviceWidht * .05,
         fontFamily: "bont",
         color: Colors.textColor,
+        textAlign: "left",
+        textAlignVertical: "center",
+    },lightTextStyle: {
+        fontSize: UserDevice.deviceWidht * .05,
+        fontFamily: "bont",
+        color: Colors.lightTextColor,
         textAlign: "left",
         textAlignVertical: "center",
     },
@@ -23,6 +38,14 @@ export const Style = StyleSheet.create({
         fontSize: UserDevice.deviceWidht * .03,
         fontFamily: "bont",
         color: Colors.textColor,
+        textAlign: "left",
+        textAlignVertical: "center",
+        opacity: .7
+    },
+    lightDateTextStyle: {
+        fontSize: UserDevice.deviceWidht * .03,
+        fontFamily: "bont",
+        color: Colors.lightTextColor,
         textAlign: "left",
         textAlignVertical: "center",
         opacity: .7

@@ -5,10 +5,12 @@ import { UFlatList } from "../molecules/uFlatList/uFlatList"
 import { USpace } from "../atoms/uSpace/uSpace"
 import { UHeader } from "../molecules/uHeader/uHeader"
 import { BannerAds } from "../../ads/bannerAds/bannerAds"
+import { useSelector } from "react-redux"
 
 export const MainPage = () => {
+    const {theme} = useSelector((state)=>state.counter)
     return (
-        <SafeAreaView style={Style.viewStyle}>
+        <SafeAreaView style={theme == true ? Style.viewStyle: Style.lightViewStyle}>
             <UHeader />
             <TelNoArea />
             <UFlatList />

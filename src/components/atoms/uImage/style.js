@@ -5,8 +5,8 @@ import { Colors } from "../../metarials/colors";
 export const Style = StyleSheet.create({
     imageStyle:{
         resizeMode:"contain", 
-        height:UserDevice.deviceHeight*.03,
-        width:UserDevice.deviceWidht*.1,
+        height:UserDevice.deviceHeight*.04,
+        width:UserDevice.deviceHeight*.04,
     },
     touchableStyle:{
         justifyContent:"center",

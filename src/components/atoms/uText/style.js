@@ -10,5 +10,10 @@ export const Style = StyleSheet.create({
         fontSize:UserDevice.deviceHeight*.03,
         color:Colors.textColor,
         fontFamily:"bont"
+    },
+    lightTextStyle:{
+        fontSize:UserDevice.deviceHeight*.03,
+        color:Colors.lightTextColor,
+        fontFamily:"bont"
     }
 })

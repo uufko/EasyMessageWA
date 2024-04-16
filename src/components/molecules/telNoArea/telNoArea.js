@@ -11,7 +11,7 @@ import { useEffect } from "react"
 
 
 export const TelNoArea = () => {
-    const { phoneNumber, localNumber ,phoneList} = useSelector((state) => state.counter)
+    const { phoneNumber, localNumber ,phoneList,theme} = useSelector((state) => state.counter)
     const dispatch = useDispatch()
 
     useEffect(() => {
@@ -31,11 +31,11 @@ export const TelNoArea = () => {
         dispatch(storageLocalCode(await AsyncStorage.getItem("localCode")))
     }
     return (
-        <View style={Style.viewStyle}>
+        <View style={theme==true?Style.viewStyle:Style.lightViewStyle}>
             <UTextInput />
             <UImage
-                backgroundColor={Colors.imageColor}
-                source={Images.sendIcon}
+                backgroundColor={theme ==true ? Colors.imageColor : Colors.lightImageColor}
+                source={theme == true ? Images.sendIcon : Images.lightSendIcon}
                 onPress={() => { 
                     Linking.openURL(`https://wa.me/${localNumber}${phoneNumber}`)
 
