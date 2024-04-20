@@ -4,7 +4,7 @@ import { Style } from "./style"
 import { ULine } from "../../atoms/uLine/uLine"
 import { UserDevice } from "../../metarials/userDevice"
 import { useDispatch, useSelector } from "react-redux"
-import { deletePhoneList } from "../../../redux/numberSlice"
+import { deletePhoneList, onPressWhatsappIcon } from "../../../redux/numberSlice"
 
 export const UFlatList = ({ data }) => {
     const { phoneList } = useSelector((state) => state.counter)
@@ -17,7 +17,7 @@ export const UFlatList = ({ data }) => {
                     return (
                         <View style={{ alignItems: "center", marginVertical:2 }}>
                             <ULine height={phoneList[0] == item ? 0 : UserDevice.deviceHeight*.000} />
-                            <UList _phone={item._phone} onPressDelete={()=>dispatch(deletePhoneList(phoneList.indexOf(item)))}
+                            <UList _phone={item._phone} onPressWhatsapp={()=>dispatch(onPressWhatsappIcon(phoneList.indexOf(item)))} onPressDelete={()=>dispatch(deletePhoneList(phoneList.indexOf(item)))}
                             _currentDay={item._day} _currentDayName={item._dayName} _currentHours={item._hour}
                             _currentMinute={item._minute} _currentMonth={item._month}
                             />

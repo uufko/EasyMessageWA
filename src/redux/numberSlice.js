@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { Linking } from "react-native";
 
 const NumberSlice = createSlice({
     name: "counter",
@@ -42,9 +43,12 @@ const NumberSlice = createSlice({
         },
         setTheme(state,data){
            state.theme = !data.payload
+        },
+        onPressWhatsappIcon(state,data){
+            Linking.openURL(`https://wa.me/${state.phoneList[data.payload]._phone}`)
         }
     }
 })
 
-export const { setPhoneNumber, addPhoneList, setLocalNumber, refresh, storagePhoneList, storageLocalCode, deletePhoneList,setTheme } = NumberSlice.actions
+export const { onPressWhatsappIcon,setPhoneNumber, addPhoneList, setLocalNumber, refresh, storagePhoneList, storageLocalCode, deletePhoneList,setTheme } = NumberSlice.actions
 export default NumberSlice

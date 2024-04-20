@@ -5,14 +5,14 @@ import { Dates } from "../../metarials/dates"
 import { useState } from "react"
 import { useSelector } from "react-redux"
 
-export const UList = ({ _phone, _currentDay, _currentDayName, _currentHours, _currentMinute, _currentMonth,onPressDelete }) => {
+export const UList = ({ onPressWhatsapp,_phone, _currentDay, _currentDayName, _currentHours, _currentMinute, _currentMonth,onPressDelete }) => {
 
     const [showButton, setShowButton] = useState(true)
     const {theme} = useSelector ((state) =>state.counter)
 
     return (
         <View style={theme == true ? Style.viewStyle:Style.lightViewStyle}>
-            {showButton==true ? <TouchableOpacity style={Style.imageView}>
+            {showButton==true ? <TouchableOpacity onPress={onPressWhatsapp} style={Style.imageView}>
                 <Image style={Style.imageStyle} source={Images.whatsappIcon} /></TouchableOpacity>:
                 <TouchableOpacity style={Style.imageView} onPress={onPressDelete}>
                 <Image style={Style.imageStyle} source={Images.deleteIcon} /></TouchableOpacity>}
