@@ -1,5 +1,5 @@
 {
-  "name": "easyMessageWhatsapp",
+  "name": "easyMessageWA",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -12,8 +12,10 @@
   "dependencies": {
     "@react-native-async-storage/async-storage": "^1.23.1",
     "@reduxjs/toolkit": "^2.2.3",
+    "axios": "^1.7.2",
     "react": "18.2.0",
     "react-native": "0.73.5",
+    "react-native-axios": "^0.17.1",
     "react-native-google-mobile-ads": "^13.2.0",
     "react-redux": "^9.1.0"
   },

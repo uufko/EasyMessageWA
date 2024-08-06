@@ -7,11 +7,11 @@
 #define TIMEOUT_SECONDS 600
 #define TEXT_TO_LOOK_FOR @"Welcome to React"
 
-@interface easyMessageWhatsappTests : XCTestCase
+@interface easyMessageWATests : XCTestCase
 
 @end
 
-@implementation easyMessageWhatsappTests
+@implementation easyMessageWATests
 
 - (BOOL)findSubviewInView:(UIView *)view matching:(BOOL (^)(UIView *view))test
 {

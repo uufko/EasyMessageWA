@@ -7,6 +7,7 @@ import { useDispatch, useSelector } from "react-redux"
 import { setTheme } from "../../../redux/numberSlice"
 import AsyncStorage from "@react-native-async-storage/async-storage"
 import { useEffect } from "react"
+import UWeather from "../uWeather/uWeather"
 
 export const UHeader = ()=>{
     const {theme} = useSelector((state)=>state.counter)

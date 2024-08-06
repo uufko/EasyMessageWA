@@ -4,5 +4,18 @@ export const Images = {
     deleteIcon: require("../images/delete.png"),
     lightIcon: require("../images/light.png"),
     darkIcon: require("../images/dark.png"),
-    lightSendIcon: require("../images/sendlight.png")
+    lightSendIcon: require("../images/sendlight.png"),
+    d01:require("./weather/01d.png"),
+    n01:require("./weather/01n.png"),
+    d02:require("./weather/02d.png"),
+    n02:require("./weather/02n.png"),
+    d03:require("./weather/03d.png"),
+    n03:require("./weather/03n.png"),
+    d04:require("./weather/04d.png"),
+    n04:require("./weather/04n.png"),
+    d09:require("./weather/09d.png"),
+    n09:require("./weather/09n.png"),
+    d11:require("./weather/11d.png"),
+    n11:require("./weather/11n.png"),
+    
 }

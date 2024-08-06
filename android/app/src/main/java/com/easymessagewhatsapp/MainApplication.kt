@@ -1,4 +1,4 @@
-package com.easymessagewhatsapp
+package com.easymessagewa
 
 import android.app.Application
 import com.facebook.react.PackageList
